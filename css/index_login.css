@@ -1,0 +1,144 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    display: grid;        
+    height: 100%;
+    place-items: center;
+    background: #0f0e17; 
+    padding: 15px;        
+}
+
+.wrapper {
+    width: 90%;            
+    max-width: 380px;      
+    background: #161524; 
+    border-radius: 17px;
+    text-align: center;
+    padding: 40px 30px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5); 
+    color: #fff;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.campo {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.entrada {
+    position: relative;
+    display: flex; 
+    align-items: center;
+}
+
+input {
+    width: 100%;
+    outline: none;
+    color: #fff;
+    padding: 14px 15px;
+    padding-left: 45px;
+    font-size: 15px;
+    background-color: transparent;
+    border-radius: 6px;
+    border: 1px solid #232235; 
+    transition: all 0.2s ease;
+}
+
+input:focus {
+    border-color: transparent;
+    background: linear-gradient(#161524, #161524) padding-box, linear-gradient(45deg, #f0d90b, #b85504) border-box;
+}
+
+img {
+    position: absolute;
+    left: 15px; 
+    width: 18px !important;  
+    height: 18px !important; 
+    flex-shrink: 0;         
+    pointer-events: none;   
+    z-index: 2;             
+}
+
+
+
+#enviar {
+    width: 100%;
+    border: 0;
+    outline: none;
+    margin-top: 15px;
+    padding: 14px;
+    background: linear-gradient(90deg, #c06a08, #967919); 
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: opacity 0.5s ease;
+    opacity: 0.5;
+}
+
+#enviar:hover {
+     opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        padding: 35px 25px; 
+    }
+    
+    h2 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    #enviar{
+        opacity: 1;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .wrapper {
+        padding: 30px 20px; 
+        border-radius: 12px;
+    }
+    
+    h2 {
+        font-size: 26px;
+    }
+    
+    input, #enviar {
+        padding: 12px;      
+        font-size: 14px;   
+    }
+    
+    img {
+        left: 12px;         
+    }
+    
+    input {
+        padding-left: 38px;
+    }
+    #enviar{
+        opacity: 1;
+    }
+}
