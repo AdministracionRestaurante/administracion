@@ -11,12 +11,6 @@ body {
     overflow-x: hidden;
 }
 
-html, body {
-    width: 100%;
-    max-width: 100%;
-}
-
-
 .admin-cont {
     display: grid;
     grid-template-columns: 260px minmax(0, 1fr);
