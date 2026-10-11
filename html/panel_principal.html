@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Administración</title>
     <link rel="stylesheet" href="../css/panel_principal.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="admin-cont">
@@ -84,26 +87,30 @@
                     <h3>Clientes</h3>
                     <div class="tbl-cont">
                         <table class="admin-tbl">
-                            <tr>
-                                <th>ID</th>
-                                <th>Cliente</th>
-                                <th>Correo Electrónico</th>
-                            </tr>
-                            <tr>
-                                <td>#1024</td>
-                                <td><strong>Juan Pérez</strong></td>
-                                <td>juan.perez@email.com</td>  
-                            </tr>
-                            <tr>
-                                <td>#1023</td>
-                                <td><strong>Maria Rossi</strong></td>
-                                <td>m.rossi@email.com</td>  
-                            </tr>
-                            <tr>
-                                <td>#1022</td>
-                                <td><strong>Luis Alva</strong></td>
-                                <td>lalva@email.com</td>
-                            </tr>
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Cliente</th>
+                                    <th>Correo Electrónico</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td data-label="ID">#1024</td>
+                                    <td data-label="Cliente"><strong>Juan Pérez</strong></td>
+                                    <td data-label="Correo Electrónico">juan.perez@email.com</td>
+                                </tr>
+                                <tr>
+                                    <td data-label="ID">#1023</td>
+                                    <td data-label="Cliente"><strong>Maria Rossi</strong></td>
+                                    <td data-label="Correo Electrónico">m.rossi@email.com</td>
+                                </tr>
+                                <tr>
+                                    <td data-label="ID">#1022</td>
+                                    <td data-label="Cliente"><strong>Luis Alva</strong></td>
+                                    <td data-label="Correo Electrónico">lalva@email.com</td>
+                                </tr>
+                            </tbody>
                         </table>
                     </div>
                 </section>

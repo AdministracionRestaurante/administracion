@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 html, body {
@@ -13,16 +13,14 @@ html, body {
     padding: 15px;        
 }
 
-.wrapper {
+.sesion-cont{
     width: 90%;            
     max-width: 380px;      
-    background: #161524; 
+    background: #07072e; 
     border-radius: 17px;
     text-align: center;
     padding: 40px 30px;
-    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5); 
     color: #fff;
-    
     display: flex;
     flex-direction: column;
 }
@@ -59,28 +57,20 @@ input {
     font-size: 15px;
     background-color: transparent;
     border-radius: 6px;
-    border: 1px solid #232235; 
-    transition: all 0.2s ease;
-}
-
-input:focus {
-    border-color: transparent;
-    background: linear-gradient(#161524, #161524) padding-box, linear-gradient(45deg, #f0d90b, #b85504) border-box;
+    border: 1px solid #d48319; 
 }
 
 img {
     position: absolute;
     left: 15px; 
-    width: 18px !important;  
-    height: 18px !important; 
+    width: 18px;  
+    height: 18px; 
     flex-shrink: 0;         
     pointer-events: none;   
     z-index: 2;             
 }
 
-
-
-#enviar {
+#ingresar {
     width: 100%;
     border: 0;
     outline: none;
@@ -97,36 +87,41 @@ img {
     opacity: 0.5;
 }
 
-#enviar:hover {
+#ingresar:hover {
      opacity: 1;
 }
 
+@media(max-width: 1280px){
+    #ingresar{
+        opacity: 1;
+    }
+}
 @media (max-width: 768px) {
-    .wrapper {
+    .sesion-cont {
         padding: 35px 25px; 
     }
     
     h2 {
-        font-size: 20px;
+        font-size: 18px;
         margin-bottom: 20px;
     }
-    #enviar{
+    #ingresar{
         opacity: 1;
     }
 }
 
 
-@media (max-width: 480px) {
-    .wrapper {
+@media (max-width: 375px) {
+    .sesion-cont {
         padding: 30px 20px; 
         border-radius: 12px;
     }
     
     h2 {
-        font-size: 26px;
+        font-size: 16px;
     }
     
-    input, #enviar {
+    input, #ingresar {
         padding: 12px;      
         font-size: 14px;   
     }
@@ -138,7 +133,8 @@ img {
     input {
         padding-left: 38px;
     }
-    #enviar{
+    #ingresar{
         opacity: 1;
     }
 }
+
