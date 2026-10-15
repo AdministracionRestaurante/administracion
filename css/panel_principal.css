@@ -242,8 +242,7 @@ th {
         margin: 12px 0 20px 0;
     }
 
-    .sidebar-menu a,
-    .sidebar-footer a {
+    .sidebar-menu a, .sidebar-footer a {
         justify-content: center;
         text-align: center;
         font-size: 0.85rem;
@@ -385,8 +384,7 @@ th {
         flex-wrap: wrap;
     }
 
-    .sidebar-menu a,
-    .sidebar-footer a {
+    .sidebar-menu a, .sidebar-footer a {
         flex: 1 1 100%;
     }
 
