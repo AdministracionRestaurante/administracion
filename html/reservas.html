@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rincón del Sabor - Gestionar Reservas</title>
+    <link href="https://googleapis.com" rel="stylesheet">
+    <link rel="stylesheet" href="../css/panel_principal.css">
+    <link rel="stylesheet" href="../css/reservas.css">
+</head>
+<body>
+    <div class="admin-cont">
+        <aside class="sidebar">
+            <h2>Rincón del Sabor</h2>
+            <div class="sidebar-rol">
+                <p>Personal de Administración</p>
+            </div>
+            <nav class="sidebar-menu">
+                <a href="panel_principal.html">Panel Principal</a>
+                <a href="platillos_bebidas.html">Platillos y Bebidas</a>
+                <a href="reservas.html" class="active">Gestionar Reservas</a>
+                <a href="eventos.html">Gestionar Eventos</a>
+            </nav>
+            <div class="sidebar-footer">
+                <a href="login.html">Cerrar Sesión</a>
+            </div>
+        </aside>
+
+        <main class="main-cont">
+            <header class="top-header">
+                <h4>Admin Carlos</h4>
+            </header>
+
+            <section class="bloque-cont buscador-seccion">
+                <form class="frm-buscar">
+                    <input type="text" placeholder="Buscar reserva por cliente o teléfono...">
+                    <button type="button" class="btn-enviar btn-buscar">Buscar</button>
+                </form>
+            </section>
+
+            <div class="design-trabajo">
+                <section class="bloque-cont">
+                    <h3>Registrar Reserva</h3>
+                    <form class="admin-frm">
+                        <div class="frm">
+                            <label for="res-cliente">Nombre del Cliente</label>
+                            <input type="text" id="res-cliente" placeholder="Nombre completo" required>
+                        </div>
+                        <div class="frm">
+                            <label for="res-tlf">Teléfono</label>
+                            <input type="tel" id="res-tlf" placeholder="Ej: 987654321" required>
+                        </div>
+                        <div class="frm-fila">
+                            <div class="frm">
+                                <label for="res-mesa">Mesa N°</label>
+                                <input type="number" id="res-mesa" placeholder="Mesa" required>
+                            </div>
+                            <div class="frm">
+                                <label for="res-fecha">Fecha</label>
+                                <input type="date" id="res-fecha" required>
+                            </div>
+                        </div>
+                        <div class="frm">
+                            <label for="res-hora">Hora de Reserva</label>
+                            <input type="time" id="res-hora" required>
+                        </div>
+                        <div class="botones">
+                            <button type="button" class="btn-guardar">Registrar Reserva</button>
+                            <button type="button" class="btn-eliminar">Eliminar</button>
+                        </div>
+                        
+                    </form>
+                </section>
+
+                <section class="bloque-cont">
+                    <h3>Reservas Activas</h3>
+                    <div class="tbl-cont">
+                        <table class="admin-tbl">
+                            <thead>
+                                <tr>
+                                    <th>Cliente</th>
+                                    <th>Teléfono</th>
+                                    <th>Mesa</th>
+                                    <th>Fecha y Hora</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td data-label="Cliente"><strong>Carlos Mendoza</strong></td>
+                                    <td data-label="Teléfono">951234567</td>
+                                    <td data-label="Mesa">Mesa 05</td>
+                                    <td data-label="Fecha/Hora">28/10/2026 - 20:00</td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Cliente"><strong>Ana Delgado</strong></td>
+                                    <td data-label="Teléfono">963852741</td>
+                                    <td data-label="Mesa">Mesa 12</td>
+                                    <td data-label="Fecha/Hora">29/10/2026 - 13:30</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
