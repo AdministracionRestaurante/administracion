@@ -25,9 +25,4 @@
     background-color: #b22222;
 }
 
-@media (max-width: 768px) {
-    .btn-grupo {
-        flex-direction: column;
-        gap: 10px;
-    }
-}
+
