@@ -1,0 +1,68 @@
+
+.buscador-seccion {
+    padding: 15px 25px;
+}
+
+.frm-buscar {
+    display: grid;
+    grid-template-columns: 1fr 140px;
+    gap: 15px;
+    width: 100%;
+}
+
+.frm-buscar .btn-buscar {
+    margin-top: 0;
+    padding: 10px;
+}
+
+.botones{
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    gap: 15px;
+    width: 100%;
+}
+.botones button{
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.9s;
+}
+.btn-guardar{
+    background-color: #8b2c06;
+    color: #dfd7d7;
+}
+.btn-guardar:hover {
+    background-color: #df460a;
+    color:white;
+}
+.btn-eliminar {
+    background-color: #5e0909;
+    color: #dfd7d7;
+}
+
+.btn-eliminar:hover {
+    background-color: #e01818;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .frm-buscar {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 375px) {
+    .admin-tbl tr {
+        margin-bottom: 15px;
+    }
+
+    .botones{
+        grid-template-columns: 1fr;
+    }
+}
