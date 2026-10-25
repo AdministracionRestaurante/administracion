@@ -1,0 +1,33 @@
+.btn-grupo {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+}
+
+.btn-grupo .btn-enviar {
+    flex: 1;
+    margin-top: 5px;
+}
+
+.btn-update {
+    background-color: #5c3109;
+    transition: all 0.9s
+}
+.btn-update:hover{
+    background-color: #db610f;
+}
+.btn-delete {
+    background-color: #4d0909;
+    transition: all 0.9s;
+}
+
+.btn-delete:hover {
+    background-color: #b22222;
+}
+
+@media (max-width: 768px) {
+    .btn-grupo {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

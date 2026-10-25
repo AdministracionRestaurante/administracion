@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rincón del Sabor - Platillos y Bebidas</title>
+    <link href="https://googleapis.com" rel="stylesheet">
+    <link rel="stylesheet" href="../css/panel_principal.css"> 
+    <link rel="stylesheet" href="../css/platillos_bebidas.css">
+</head>
+<body>
+    <div class="admin-cont">
+        <aside class="sidebar">
+            <h2>Rincón del Sabor</h2>
+            <div class="sidebar-rol">
+                <p>Personal de Administración</p>
+            </div>
+            <nav class="sidebar-menu">
+                <a href="panel_principal.html">Panel Principal</a>
+                <a href="platillos_bebidas.html">Platillos y Bebidas</a>
+                <a href="reservas.html">Gestionar Reservas</a>
+                <a href="eventos.html">Gestionar Eventos</a>
+            </nav>
+            <div class="sidebar-footer">
+                <a href="../html/login.html">Cerrar Sesión</a>
+            </div>
+        </aside>
+        
+        <main class="main-cont">
+            <header class="top-header">
+                <h4>Admin Carlos</h4>
+            </header>
+
+            <div class="design-trabajo">
+                
+                <section class="bloque-cont">
+                    <h3>Acciones del Menú</h3>
+                    <form class="admin-frm">
+                        <div class="frm">
+                            <label for="platillo-id">ID del Platillo / Bebida</label>
+                            <input type="text" id="platillo-id" placeholder="Ej: #301" required>
+                        </div>
+                        <div class="frm">
+                            <label for="platillo-nombre">Nombre</label>
+                            <input type="text" id="platillo-nombre" placeholder="Nombre del elemento">
+                        </div>
+                        <div class="frm-fila">
+                            <div class="frm">
+                                <label for="platillo-precio">Precio (S/.)</label>
+                                <input type="number" step="0.10" id="platillo-precio" placeholder="0.00">
+                            </div>
+                            <div class="frm">
+                                <label for="platillo-cat">Categoría</label>
+                                <select id="platillo-cat">
+                                    <option value="plato">Plato</option>
+                                    <option value="bebida">Bebida</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="frm">
+                            <label for="platillo-desc">Descripción Breve</label>
+                            <textarea id="platillo-desc" rows="3" placeholder="Descripción..."></textarea>
+                        </div>
+                        <div class="btn-grupo">
+                            <button type="button" class="btn-enviar btn-update">Actualizar</button>
+                            <button type="button" class="btn-enviar btn-delete">Eliminar</button>
+                        </div>
+                    </form>
+                </section>
+
+                <section class="bloque-cont">
+                    <h3>Lista de Platillos y Bebidas</h3>
+                    <div class="tbl-cont">
+                        <table class="admin-tbl">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Nombre</th>
+                                    <th>Precio</th>
+                                    <th>Descripción</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td data-label="ID">#301</td>
+                                    <td data-label="Nombre"><strong>Lomo Saltado</strong></td>
+                                    <td data-label="Precio">S/ 38.00</td>
+                                    <td data-label="Descripción">Jugosos trozos de carne saltados al wok con cebolla y tomate.</td>
+                                </tr>
+                                <tr>
+                                    <td data-label="ID">#302</td>
+                                    <td data-label="Nombre"><strong>Chicha Morada</strong></td>
+                                    <td data-label="Precio">S/ 12.00</td>
+                                    <td data-label="Descripción">Bebida tradicional a base de maíz morado, piña y limón.</td>
+                                </tr>
+                                <tr>
+                                    <td data-label="ID">#303</td>
+                                    <td data-label="Nombre"><strong>Ceviche Clásico</strong></td>
+                                    <td data-label="Precio">S/ 42.00</td>
+                                    <td data-label="Descripción">Pescado fresco marinado en zumo de limón, acompañado de camote y choclo.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
